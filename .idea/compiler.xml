@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="InMind-SARA-Commons_main" target="1.7" />
+      <module name="InMind-SARA-Commons_test" target="1.7" />
+      <module name="sara-commons_main" target="1.7" />
+      <module name="sara-commons_test" target="1.7" />
+      <module name="sara_main" target="1.7" />
+      <module name="sara_test" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

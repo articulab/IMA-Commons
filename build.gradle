@@ -1,0 +1,105 @@
+plugins {
+    id 'idea'
+    id 'java'
+    id 'maven'
+}
+
+group 'edu.cmu.inmind'
+version '2.0.6'
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+idea {
+    module {
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
+
+repositories {
+    jcenter()
+}
+
+configurations {
+    deployerJars
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    deployerJars 'org.apache.maven.wagon:wagon-ssh:2.9'
+}
+
+javadoc {
+    source = sourceSets.main.allJava
+    classpath = configurations.compileClasspath
+
+    options {
+        setMemberLevel JavadocMemberLevel.PUBLIC
+        setAuthor true
+
+        links "https://docs.oracle.com/javase/8/docs/api/"
+    }
+}
+
+// https://stackoverflow.com/a/21904270/1391325
+task javadocJar(type: Jar, dependsOn: 'javadoc') {
+    from javadoc.destinationDir
+    classifier = 'javadoc'
+}
+
+task sourceJar(type: Jar, dependsOn: 'classes') {
+    from sourceSets.main.allSource
+    classifier = 'sources'
+}
+
+artifacts {
+    archives javadocJar
+    archives sourceJar
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            configuration = configurations.deployerJars
+            repository(url: "scp://linux.gp.cs.cmu.edu:/afs/cs/project/inmind-cmu-yahoo/www/maven2/") {
+                //http://stackoverflow.com/questions/12749225/where-to-put-gradle-configuration-i-e-credentials-that-should-not-be-committe
+                //authentication(userName: mavenUser, password: mavenPassword)
+            }
+
+            pom.project {
+                name "${rootProject.name}"
+                packaging 'jar'
+                description 'Sara Common Catalog'
+                pom.version = project.version
+                pom.artifactId = 'saracommons'
+                pom.groupId = "edu.cmu.inmind.framework"
+
+//                licenses {
+//                    license {
+//                        name 'The Apache Software License, Version 2.0'
+//                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//                        distribution 'repo'
+//                    }
+//                }
+
+                developers {
+                    developer {
+                        name 'Oscar Romero'
+                        email 'oscarr@andrew.cmu.edu'
+                    }
+                    developer {
+                        name 'Todd Shore'
+                        email 'tshore@cs.cmu.edu'
+                    }
+                }
+            }
+        }
+    }
+}
+
+wrapper {
+    gradleVersion = "4.7"
+    // https://docs.gradle.org/current/userguide/gradle_wrapper.html#customizing_wrapper
+	//noinspection UnnecessaryQualifiedReference
+	distributionType = Wrapper.DistributionType.ALL
+}
