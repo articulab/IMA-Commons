@@ -31,11 +31,9 @@ public final class ComponentMessageTypes {
     public static final String MSG_NVB = "MSG_NVB";
     public static final String MSG_QUERY = "MSG_QUERY";
     public static final String MSG_QUERY_RESPONSE = "MSG_QUERY_RESPONSE";
-    public static final String MSG_RESPONSE_START_PYTHON = "MSG_RESPONSE_START_PYTHON";
     public static final String MSG_RPT = "MSG_RPT";
     public static final String MSG_SR = "MSG_SR";
     public static final String MSG_START_DM = "MSG_START_DM";
-    public static final String MSG_START_DM_PYTHON = "MSG_START_DM_PYTHON";
     public static final String MSG_START_SESSION = "MSG_START_SESSION";
     public static final String MSG_START_STREAMING = "MSG_START_STREAMING";
     public static final String MSG_StartOpenFace = "MSG_StartOpenFace";
