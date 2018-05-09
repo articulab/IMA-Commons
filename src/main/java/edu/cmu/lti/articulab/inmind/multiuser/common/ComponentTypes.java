@@ -65,6 +65,19 @@ public final class ComponentTypes {
 	 * </ul>
 	 */
 	public static final String ID_RPT = "ID_RPT";
+	/**
+	 * <p>
+	 * A component that does social reasoning.
+	 * </p>
+	 * See:
+	 * <ul>
+	 * <li>Romero, Oscar J., Ran Zhao &amp; Justine Cassell. 2017.
+	 * <a href="https://doi.org/10.24963/ijcai.2017/532">&ldquo;Cognitive-Inspired
+	 * Conversational-Strategy Reasoner for Socially-Aware Agents&rdquo;</a>.
+	 * Proceedings of the Twenty-Sixth International Joint Conference on Artificial
+	 * Intelligence, pp.&nbsp;3807&ndash;3813</li>
+	 * </ul>
+	 */
 	public static final String ID_SR = "ID_SR";
 	public static final String ID_UM = "ID_UM";
 

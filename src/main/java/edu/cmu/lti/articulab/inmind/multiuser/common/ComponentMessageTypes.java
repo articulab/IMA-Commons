@@ -74,6 +74,19 @@ public final class ComponentMessageTypes {
 	 * </ul>
 	 */
 	public static final String MSG_RPT = "MSG_RPT";
+	/**
+	 * <p>
+	 * A message type representing social reasoner output.
+	 * </p>
+	 * See:
+	 * <ul>
+	 * <li>Romero, Oscar J., Ran Zhao &amp; Justine Cassell. 2017.
+	 * <a href="https://doi.org/10.24963/ijcai.2017/532">&ldquo;Cognitive-Inspired
+	 * Conversational-Strategy Reasoner for Socially-Aware Agents&rdquo;</a>.
+	 * Proceedings of the Twenty-Sixth International Joint Conference on Artificial
+	 * Intelligence, pp.&nbsp;3807&ndash;3813</li>
+	 * </ul>
+	 */
 	public static final String MSG_SR = "MSG_SR";
 	public static final String MSG_START_DM = "MSG_START_DM";
 	public static final String MSG_START_SESSION = "MSG_START_SESSION";
