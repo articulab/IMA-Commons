@@ -53,6 +53,7 @@ public class UserModel {
     /**
      * If a field is not present in a json object, GSON will overwrite it with null even if it is final.
      * Use this method to ensure that the object is in the expected state.
+     * @return <code>true</code> iff this object is in a valid state
      */
     @SuppressWarnings("ConstantConditions")
     public boolean isValid() {

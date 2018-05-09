@@ -31,6 +31,7 @@ public final class ComponentTypes {
 	 * <li>Spencer-Oatey, Helen. 2008. &ldquo;Face, (im)politeness and
 	 * rapport&rdquo;. In: Spencer-Oatey, Helen (ed.) <em>Culturally Speaking</em>
 	 * (2nd ed.), pp.&nbsp;11&ndash;47</li>
+	 * </ul>
 	 */
 	public static final String ID_CSC = "ID_CSC";
 	/**
