@@ -1,4 +1,8 @@
+### PROJECT-SPECIFIC
 
+# Ignore all JetBrains project files because importing via Gradle is more consistent
+.idea/
+*.iml
 
 ### https://github.com/github/gitignore
 ## JAVA <https://github.com/github/gitignore/blob/master/Java.gitignore>
