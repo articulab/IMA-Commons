@@ -1,4 +1,4 @@
-package edu.cmu.inmind.multiuser.common.model;
+package edu.cmu.lti.articulab.inmind.multiuser.common.model;
 
 /**
  * Created by oscarr on 3/3/17.
@@ -6,6 +6,7 @@ package edu.cmu.inmind.multiuser.common.model;
 public class ASROutput {
 
     private String utterance;
+
     private double confidence;
 
     public ASROutput(String utterance, double confidence) {

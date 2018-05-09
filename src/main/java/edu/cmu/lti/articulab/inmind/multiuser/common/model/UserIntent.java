@@ -1,4 +1,4 @@
-package edu.cmu.inmind.multiuser.common.model;
+package edu.cmu.lti.articulab.inmind.multiuser.common.model;
 
 import java.util.List;
 

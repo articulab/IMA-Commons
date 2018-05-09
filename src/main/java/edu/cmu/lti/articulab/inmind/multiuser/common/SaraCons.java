@@ -1,4 +1,4 @@
-package edu.cmu.inmind.multiuser.common;
+package edu.cmu.lti.articulab.inmind.multiuser.common;
 
 /**
  * Created by oscarr on 3/3/17.

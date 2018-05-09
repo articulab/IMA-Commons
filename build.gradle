@@ -4,7 +4,7 @@ plugins {
     id 'maven'
 }
 
-group 'edu.cmu.inmind'
+group 'edu.cmu.lti.articulab.inmind'
 version '2.0.6'
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
