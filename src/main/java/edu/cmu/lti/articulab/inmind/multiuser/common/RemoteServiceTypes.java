@@ -8,6 +8,7 @@ package edu.cmu.lti.articulab.inmind.multiuser.common;
 
 /**
  * Constants defining the different types of remote services able to be handled.
+ * These are string constants rather than e.g.&nbsp;enums so that they can be used as compile-time constants for e.g.&nbsp;class annotations.
  *
  * @author <a href="mailto:tshore@cs.cmu.edu">Todd Shore</a>
  * @since 2018-05-08
