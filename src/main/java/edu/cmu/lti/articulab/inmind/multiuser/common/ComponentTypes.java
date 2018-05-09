@@ -59,7 +59,7 @@ public final class ComponentTypes {
 	 * </p>
 	 * See:
 	 * <ul>
-	 * <li>Linda Tickle-Degnen &amp; Robert Rosenthal. 1990. &ldquo;The nature of
+	 * <li>Tickle-Degnen, Linda &amp; Robert Rosenthal. 1990. &ldquo;The nature of
 	 * rapport and its nonverbal correlates&rdquo;. <em>Psychological inquiry</em>,
 	 * 1(4):285&ndash;293</li>
 	 * </ul>
