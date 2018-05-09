@@ -69,7 +69,7 @@ uploadArchives {
             }
 
             pom.project {
-                description 'Constants and logic common to all components of InMind\'s Movie Agent (IMA) application. '
+                description 'Constants and logic common to all components of the InMind Movie Agent (IMA) application. '
 
 //                licenses {
 //                    license {
