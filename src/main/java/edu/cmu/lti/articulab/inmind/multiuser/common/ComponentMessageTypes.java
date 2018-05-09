@@ -68,8 +68,8 @@ public final class ComponentMessageTypes {
 	 * </p>
 	 * See:
 	 * <ul>
-	 * <li>Tickle-Degnen, Linda &amp; Robert Rosenthal. 1990. &ldquo;The nature of
-	 * rapport and its nonverbal correlates&rdquo;. <em>Psychological inquiry</em>,
+	 * <li>Tickle-Degnen, Linda &amp; Robert Rosenthal. 1990. <a href="https://doi.org/10.1207/s15327965pli0104_1">&ldquo;The nature of
+	 * rapport and its nonverbal correlates&rdquo;</a>. <em>Psychological inquiry</em>,
 	 * 1(4):285&ndash;293</li>
 	 * </ul>
 	 */
