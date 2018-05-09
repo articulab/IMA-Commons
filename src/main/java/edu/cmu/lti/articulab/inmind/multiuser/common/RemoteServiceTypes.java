@@ -27,7 +27,7 @@ public final class RemoteServiceTypes {
 	 */
 	public static final String DM_SERVICE = "DM_SERVICE";
 	/**
-	 * A remote service type for doing social reasoning (SR).
+	 * A remote service type for doing social reasoning.
 	 */
 	public static final String SR_SERVICE = "SR_SERVICE";
 	/**
