@@ -8,22 +8,43 @@ package edu.cmu.lti.articulab.inmind.multiuser.common;
 
 /**
  * Constants defining the different types of remote services able to be handled.
- * These are string constants rather than e.g.&nbsp;enums so that they can be used as compile-time constants for e.g.&nbsp;class annotations.
+ * These are string constants rather than e.g.&nbsp;enums so that they can be
+ * used as compile-time constants for e.g.&nbsp;class annotations.
  *
  * @author <a href="mailto:tshore@cs.cmu.edu">Todd Shore</a>
  * @since 2018-05-08
  */
 public final class RemoteServiceTypes {
 
-    public static final String NLU_DM_SERVICE = "NLU_DM_SERVICE";
-    public static final String NLG_SERVICE = "NLG_SERVICE";
-    public static final String DM_SERVICE = "DM_SERVICE";
-    public static final String SR_SERVICE = "SR_SERVICE";
-    public static final String RPT_SERVICE = "RPT_SERVICE";
+	public static final String NLU_DM_SERVICE = "NLU_DM_SERVICE";
+	/**
+	 * A remote service type for doing NLG.
+	 */
+	public static final String NLG_SERVICE = "NLG_SERVICE";
+	/**
+	 * A remote service type for doing
+	 * <a href="https://en.wikipedia.org/wiki/Dialog_manager">dialog management</a>.
+	 */
+	public static final String DM_SERVICE = "DM_SERVICE";
+	/**
+	 * A remote service type for doing social reasoning (SR).
+	 */
+	public static final String SR_SERVICE = "SR_SERVICE";
+	/**
+	 * <p>
+	 * A remote service type for doing rapport estimation.
+	 * </p>
+	 * See:
+	 * <ul>
+	 * <li>Linda Tickle-Degnen &amp; Robert Rosenthal. 1990. &ldquo;The nature of
+	 * rapport and its nonverbal correlates&rdquo;. <em>Psychological inquiry</em>,
+	 * 1(4):285&ndash;293</li>
+	 * </ul>
+	 */
+	public static final String RPT_SERVICE = "RPT_SERVICE";
 
-    private RemoteServiceTypes() {
-        // no instantiation
-    }
-
+	private RemoteServiceTypes() {
+		// no instantiation
+	}
 
 }
