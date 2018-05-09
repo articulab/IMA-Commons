@@ -1,5 +1,8 @@
 ### PROJECT-SPECIFIC
 
+# Ignore all Eclipse project files because importing via Gradle is more consistent
+.classpath
+.project
 # Ignore all JetBrains project files because importing via Gradle is more consistent
 .idea/
 *.iml
