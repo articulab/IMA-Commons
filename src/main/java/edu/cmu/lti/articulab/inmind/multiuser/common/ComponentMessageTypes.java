@@ -7,12 +7,12 @@
 package edu.cmu.lti.articulab.inmind.multiuser.common;
 
 /**
- * Constants defining the different types of messages able to be sent and received.
+ * Constants defining the different types of component messages able to be sent and received.
  *
  * @author <a href="mailto:tshore@cs.cmu.edu">Todd Shore</a>
  * @since 2018-05-08
  */
-public final class MessageTypes {
+public final class ComponentMessageTypes {
 
     public static final String MSG_ASR = "MSG_ASR";
     public static final String MSG_ASR_CSC = "MSG_ASR_CSC";
@@ -42,7 +42,7 @@ public final class MessageTypes {
     public static final String MSG_UM = "MSG_UM";
     public static final String MSG_USER_FRAME = "MSG_USER_FRAME";
 
-    private MessageTypes() {
+    private ComponentMessageTypes() {
         // no instantiation
     }
 
