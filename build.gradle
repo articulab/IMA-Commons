@@ -69,7 +69,7 @@ uploadArchives {
             pom.project {
                 name "${rootProject.name}"
                 packaging 'jar'
-                description 'Sara Common Catalog'
+                description 'Constants and logic common to all components of InMind\'s SARA application. '
                 pom.version = project.version
                 pom.artifactId = 'saracommons'
                 pom.groupId = "edu.cmu.inmind.framework"
