@@ -11,9 +11,9 @@ import java.util.Arrays;
 /**
  * Created by fpecune on 9/7/2017.
  */
-final class Utils {
+public final class Utils {
 
-    static void checkContents(String variable, String... values) throws IllegalArgumentException {
+    public static void checkContents(String variable, String... values) throws IllegalArgumentException {
         if (!Arrays.asList(values).contains(variable))
             throw new IllegalArgumentException(variable);
     }
