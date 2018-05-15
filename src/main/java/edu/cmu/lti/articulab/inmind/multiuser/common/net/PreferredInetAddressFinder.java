@@ -359,6 +359,8 @@ public final class PreferredInetAddressFinder {
 	 *
 	 * @return A new {@link List} of {@link Map.Entry} instances sorted by
 	 *         preference.
+	 * @throws SocketException
+	 *             if an error occurs while querying system network interfaces.
 	 */
 	public List<InetAddressNetworkInterface> get() throws SocketException {
 		// https://docs.oracle.com/javase/tutorial/networking/nifs/listing.html
