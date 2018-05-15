@@ -19,7 +19,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Enumeration;
 import java.util.List;
-import java.util.Map;
+import java.util.Map.Entry;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -43,15 +43,15 @@ public final class PreferredInetAddressFinder {
 
 	/**
 	 * A {@link Comparable comparable} pair of {@link InetAddress} instance
-	 * {@link Map.Entry#getKey() keys} mapping to associated
-	 * {@link NetworkInterface} {@link Map.Entry#getValue() values}.
+	 * {@link Entry#getKey() keys} mapping to associated
+	 * {@link NetworkInterface} {@link Entry#getValue() values}.
 	 *
 	 * @author <a href="mailto:tshore@cs.cmu.edu">Todd Shore</a>
 	 * @since 2018-05-15
 	 *
 	 */
-	public final class InetAddressNetworkInterface implements Map.Entry<InetAddress, NetworkInterface>,
-			Comparable<Map.Entry<? extends InetAddress, ? extends NetworkInterface>> {
+	public final class InetAddressNetworkInterface implements Entry<InetAddress, NetworkInterface>,
+			Comparable<Entry<? extends InetAddress, ? extends NetworkInterface>> {
 
 		private final InetAddress addr;
 
@@ -63,7 +63,7 @@ public final class PreferredInetAddressFinder {
 		}
 
 		@Override
-		public int compareTo(final Map.Entry<? extends InetAddress, ? extends NetworkInterface> other) {
+		public int compareTo(final Entry<? extends InetAddress, ? extends NetworkInterface> other) {
 			int result = PreferredInetAddressFinder.compare(getValue(), other.getValue());
 			if (result == 0) {
 				result = compare(getKey(), other.getKey());
@@ -357,7 +357,7 @@ public final class PreferredInetAddressFinder {
 	 * Creates an ordered {@link List} of preferred {@link InetAddress} instances
 	 * found for the system.
 	 *
-	 * @return A new {@link List} of {@link Map.Entry} instances sorted by
+	 * @return A new {@link List} of {@link Entry} instances sorted by
 	 *         preference.
 	 * @throws SocketException
 	 *             if an error occurs while querying system network interfaces.
