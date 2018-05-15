@@ -27,6 +27,16 @@ dependencies {
     //testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
+compileJava {
+	// Specify that the source files are in UTF-8 so that Windows machines compile correctly
+	options.encoding = 'UTF-8'
+}
+
+compileTestJava {
+	// Specify that the source files are in UTF-8 so that Windows machines compile correctly
+	options.encoding = 'UTF-8'
+}
+
 javadoc {
     source = sourceSets.main.allJava
     classpath = configurations.compileClasspath
