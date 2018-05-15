@@ -21,14 +21,9 @@ repositories {
     jcenter()
 }
 
-configurations {
-    deployerJars
-}
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    deployerJars group: 'org.apache.maven.wagon', name: 'wagon-ssh', version: '3.0.0'
-
+    //testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
 javadoc {
@@ -57,41 +52,6 @@ task sourceJar(type: Jar, dependsOn: 'classes') {
 artifacts {
     archives javadocJar
     archives sourceJar
-}
-
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            configuration = configurations.deployerJars
-            repository(url: "scp://linux.gp.cs.cmu.edu:/afs/cs/project/inmind-cmu-yahoo/www/maven2/") {
-                //http://stackoverflow.com/questions/12749225/where-to-put-gradle-configuration-i-e-credentials-that-should-not-be-committe
-                //authentication(userName: mavenUser, password: mavenPassword)
-            }
-
-            pom.project {
-                description 'Constants and logic common to all components of the InMind Movie Agent (IMA) application. '
-
-//                licenses {
-//                    license {
-//                        name 'The Apache Software License, Version 2.0'
-//                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-//                        distribution 'repo'
-//                    }
-//                }
-
-                developers {
-                    developer {
-                        name 'Oscar Romero'
-                        email 'oscarr@andrew.cmu.edu'
-                    }
-                    developer {
-                        name 'Todd Shore'
-                        email 'tshore@cs.cmu.edu'
-                    }
-                }
-            }
-        }
-    }
 }
 
 wrapper {
