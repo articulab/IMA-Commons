@@ -6,7 +6,7 @@ plugins {
 }
 
 group 'edu.cmu.lti.articulab.inmind'
-version '3.0.1'
+
 // NOTE: The Java version should remain at 7 because Android support for 8+ isn't universal
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
