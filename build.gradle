@@ -1,6 +1,7 @@
 plugins {
     id 'idea'
     id 'java'
+    // NOTE: Maven plugin is required for publishing to JitPack: https://jitpack.io/docs/BUILDING/
     id 'maven'
 }
 
