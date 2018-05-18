@@ -8,8 +8,8 @@ public enum ConversationalStrategy {
     SE,
     VSN,
     PR,
-    //BC,
-    ASN,
+    BC,
     QESD,
-    //Hedge
+    IN,
+    NONE
 }

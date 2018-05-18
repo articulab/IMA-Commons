@@ -30,4 +30,12 @@ public class NonVerbalOutput {
     public void setGazeAtPartner(boolean gazeAtPartner) {
         this.gazeAtPartner = gazeAtPartner;
     }
+
+    public boolean getSmiling(){
+        return  smiling;
+    }
+
+    public boolean getGaze(){
+        return gazeAtPartner;
+    }
 }
