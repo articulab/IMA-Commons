@@ -346,7 +346,7 @@ public final class PreferredInetAddressFinder {
 	private final int socketTimeout;
 
 	public PreferredInetAddressFinder() {
-		this(1000);
+		this(3000);
 	}
 
 	public PreferredInetAddressFinder(final int socketTimeout) {
