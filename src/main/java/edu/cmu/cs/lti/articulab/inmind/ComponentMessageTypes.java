@@ -68,9 +68,10 @@ public final class ComponentMessageTypes {
 	 * </p>
 	 * See:
 	 * <ul>
-	 * <li>Tickle-Degnen, Linda &amp; Robert Rosenthal. 1990. <a href="https://doi.org/10.1207/s15327965pli0104_1">&ldquo;The nature of
-	 * rapport and its nonverbal correlates&rdquo;</a>. <em>Psychological inquiry</em>,
-	 * 1(4):285&ndash;293</li>
+	 * <li>Tickle-Degnen, Linda &amp; Robert Rosenthal. 1990.
+	 * <a href="https://doi.org/10.1207/s15327965pli0104_1">&ldquo;The nature of
+	 * rapport and its nonverbal correlates&rdquo;</a>. <em>Psychological
+	 * inquiry</em>, 1(4):285&ndash;293</li>
 	 * </ul>
 	 */
 	public static final String MSG_RPT = "MSG_RPT";
@@ -88,7 +89,15 @@ public final class ComponentMessageTypes {
 	 * </ul>
 	 */
 	public static final String MSG_SR = "MSG_SR";
+	/**
+	 * A message type representing a request to begin dialogue management,
+	 * i.e.&nbsp;<em>not</em> yet the user <em>interaction</em>.
+	 */
 	public static final String MSG_START_DM = "MSG_START_DM";
+	/**
+	 * A message type representing a request from a client to start a server-client
+	 * session, i.e.&nbsp;<em>not</em> yet the user <em>interaction</em>.
+	 */
 	public static final String MSG_START_SESSION = "MSG_START_SESSION";
 	public static final String MSG_START_STREAMING = "MSG_START_STREAMING";
 	public static final String MSG_StartOpenFace = "MSG_StartOpenFace";
