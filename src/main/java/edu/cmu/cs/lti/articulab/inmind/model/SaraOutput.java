@@ -5,6 +5,7 @@ import java.util.ArrayList;
 /**
  * Created by oscarr on 3/3/17.
  */
+@Deprecated
 public class SaraOutput {
     private VerbalOutput verbal;
     private NonVerbalOutput nonVerbal;
