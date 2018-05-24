@@ -20,10 +20,7 @@ public final class ComponentMessageTypes {
 	 * A message type representing ASR output.
 	 */
 	public static final String MSG_ASR = "MSG_ASR";
-	public static final String MSG_ASR_CSC = "MSG_ASR_CSC";
-	public static final String MSG_ASR_CSC_RESPONSE = "MSG_ASR_CSC_RESPONSE";
-	public static final String MSG_ASR_DM = "MSG_ASR_DM";
-	public static final String MSG_ASR_DM_RESPONSE = "MSG_ASR_DM_RESPONSE";
+
 	/**
 	 * <p>
 	 * A message type representing conversational strategy classifier output.
@@ -41,16 +38,14 @@ public final class ComponentMessageTypes {
 	 * </ul>
 	 */
 	public static final String MSG_CSC = "MSG_CSC";
-	public static final String MSG_DIALOGUE_RESPONSE = "MSG_DIALOGUE_RESPONSE";
+
 	/**
 	 * A message type representing
 	 * <a href="https://en.wikipedia.org/wiki/Dialog_manager">dialog manager</a>
 	 * output.
 	 */
 	public static final String MSG_DM = "MSG_DM";
-	public static final String MSG_GUAVA_SERVICE = "MSG_GUAVA_SERVICE";
-	public static final String MSG_LOCAL = "MSG_LOCAL";
-	public static final String MSG_LOG_COMPONENT = "MSG_LOG_COMPONENT";
+
 	/**
 	 * A message type representing NLG output.
 	 */
@@ -65,8 +60,7 @@ public final class ComponentMessageTypes {
 	 * behavior</a>.
 	 */
 	public static final String MSG_NVB = "MSG_NVB";
-	public static final String MSG_QUERY = "MSG_QUERY";
-	public static final String MSG_QUERY_RESPONSE = "MSG_QUERY_RESPONSE";
+
 	/**
 	 * <p>
 	 * A message type representing rapport estimator output.
@@ -80,6 +74,7 @@ public final class ComponentMessageTypes {
 	 * </ul>
 	 */
 	public static final String MSG_RPT = "MSG_RPT";
+
 	/**
 	 * <p>
 	 * A message type representing social reasoner output.
@@ -99,20 +94,18 @@ public final class ComponentMessageTypes {
 	 * i.e.&nbsp;<em>not</em> yet the user <em>interaction</em>.
 	 */
 	public static final String MSG_START_DM = "MSG_START_DM";
+
 	/**
 	 * A message type representing a request from a client to start a server-client
 	 * session, i.e.&nbsp;<em>not</em> yet the user <em>interaction</em>.
 	 */
 	public static final String MSG_START_SESSION = "MSG_START_SESSION";
-	public static final String MSG_START_STREAMING = "MSG_START_STREAMING";
-	public static final String MSG_StartOpenFace = "MSG_StartOpenFace";
-	public static final String MSG_SYNC_SERVICE = "MSG_SYNC_SERVICE";
+
 	/**
 	 * A message type representing the state of a given
 	 * <a href="https://en.wikipedia.org/wiki/User_modeling">user model</a>.
 	 */
 	public static final String MSG_UM = "MSG_UM";
-	public static final String MSG_USER_FRAME = "MSG_USER_FRAME";
 
 	private ComponentMessageTypes() {
 		// no instantiation
