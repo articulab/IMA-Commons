@@ -4,7 +4,7 @@
     This is proprietary and confidential.
     Written by members of the ArticuLab, directed by Justine Cassell, 2018.
  */
-package edu.cmu.lti.articulab.inmind.multiuser.common;
+package edu.cmu.cs.lti.articulab.inmind;
 
 /**
  * Constants defining the different types of components able to be handled.

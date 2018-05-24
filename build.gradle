@@ -5,7 +5,7 @@ plugins {
     id 'maven'
 }
 
-group 'edu.cmu.lti.articulab.inmind'
+group 'edu.cmu.cs.lti.articulab.inmind'
 
 // NOTE: The Java version should remain at 7 because Android support for 8+ isn't universal
 sourceCompatibility = 1.7

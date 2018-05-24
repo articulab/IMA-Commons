@@ -5,7 +5,7 @@
  * Written by members of the ArticuLab, directed by Justine Cassell, 2018.
  */
 
-package edu.cmu.lti.articulab.inmind.multiuser.common.net;
+package edu.cmu.cs.lti.articulab.inmind.net;
 
 import java.io.IOException;
 import java.net.Inet4Address;
