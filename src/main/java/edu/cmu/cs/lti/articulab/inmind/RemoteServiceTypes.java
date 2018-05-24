@@ -14,6 +14,7 @@ package edu.cmu.cs.lti.articulab.inmind;
  * @author <a href="mailto:tshore@cs.cmu.edu">Todd Shore</a>
  * @since 2018-05-08
  */
+@Deprecated
 public final class RemoteServiceTypes {
 
 	public static final String NLU_DM_SERVICE = "NLU_DM_SERVICE";
