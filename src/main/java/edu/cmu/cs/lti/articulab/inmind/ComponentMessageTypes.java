@@ -47,6 +47,11 @@ public final class ComponentMessageTypes {
 	public static final String MSG_DM = "MSG_DM";
 
 	/**
+	 * A message type representing the start of the session user interaction.
+	 */
+	public static final String MSG_INTERACTION_STARTED = "MSG_INTERACTION_STARTED";
+
+	/**
 	 * A message type representing NLG output.
 	 */
 	public static final String MSG_NLG = "MSG_NLG";
@@ -92,7 +97,8 @@ public final class ComponentMessageTypes {
 
 	/**
 	 * A message type representing a request from a client to start a server-client
-	 * session, i.e.&nbsp;<em>not</em> yet the user <em>interaction</em>.
+	 * session, i.e.&nbsp;<em>not</em> yet the user {@link #MSG_INTERACTION_STARTED
+	 * interaction}.
 	 */
 	public static final String MSG_START_SESSION = "MSG_START_SESSION";
 
