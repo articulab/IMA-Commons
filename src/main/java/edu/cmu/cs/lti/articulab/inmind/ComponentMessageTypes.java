@@ -89,11 +89,6 @@ public final class ComponentMessageTypes {
 	 * </ul>
 	 */
 	public static final String MSG_SR = "MSG_SR";
-	/**
-	 * A message type representing a request to begin dialogue management,
-	 * i.e.&nbsp;<em>not</em> yet the user <em>interaction</em>.
-	 */
-	public static final String MSG_START_DM = "MSG_START_DM";
 
 	/**
 	 * A message type representing a request from a client to start a server-client
