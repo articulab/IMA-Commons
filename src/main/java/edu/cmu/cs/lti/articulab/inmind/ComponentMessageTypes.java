@@ -47,6 +47,11 @@ public final class ComponentMessageTypes {
 	public static final String MSG_DM = "MSG_DM";
 
 	/**
+	 * A message type representing the end of the session user interaction.
+	 */
+	public static final String MSG_INTERACTION_ENDED = "MSG_INTERACTION_ENDED";
+
+	/**
 	 * A message type representing the start of the session user interaction.
 	 */
 	public static final String MSG_INTERACTION_STARTED = "MSG_INTERACTION_STARTED";
