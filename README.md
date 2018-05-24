@@ -13,5 +13,5 @@ To use this code as a Gradle dependency in your code, add the following to your 
 		maven { url "https://jitpack.io" }
 	}
 	dependencies {
-		implementation group:'com.github.articulab', name:'IMA-Commons', version:'master-SNAPSHOT'
+		implementation group:'com.github.articulab', name:'StanfordCoreNLP-Dialog', version:'master-SNAPSHOT'
 	}
