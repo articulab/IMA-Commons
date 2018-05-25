@@ -79,12 +79,6 @@ public final class ComponentMessageTypes {
 	public static final String MSG_NVB = "MSG_NVB";
 
 	/**
-	 * A message type representing a request from the user to start the user
-	 * interaction.
-	 */
-	public static final String MSG_REQUEST_INTERACTION_START = "MSG_REQUEST_INTERACTION_START";
-
-	/**
 	 * <p>
 	 * A message type representing rapport estimator output.
 	 * </p>
@@ -112,6 +106,12 @@ public final class ComponentMessageTypes {
 	 * </ul>
 	 */
 	public static final String MSG_SR = "MSG_SR";
+
+	/**
+	 * A message type representing a request to start the user
+	 * interaction.
+	 */
+	public static final String MSG_START_INTERACTION = "MSG_START_INTERACTION";
 
 	/**
 	 * A message type representing a request from a client to start a user session,
