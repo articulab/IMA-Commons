@@ -60,6 +60,7 @@ public final class ComponentMessageTypes {
 	 * A message type representing NLG output.
 	 */
 	public static final String MSG_NLG = "MSG_NLG";
+
 	/**
 	 * A message type representing NLU output.
 	 */
@@ -70,6 +71,12 @@ public final class ComponentMessageTypes {
 	 * behavior</a>.
 	 */
 	public static final String MSG_NVB = "MSG_NVB";
+	
+	/**
+	 * A message type representing a request from the user to start the user
+	 * interaction.
+	 */
+	public static final String MSG_REQUEST_INTERACTION_START = "MSG_REQUEST_INTERACTION_START";
 
 	/**
 	 * <p>
@@ -101,9 +108,10 @@ public final class ComponentMessageTypes {
 	public static final String MSG_SR = "MSG_SR";
 
 	/**
-	 * A message type representing a request from a client to start a server-client
-	 * session, i.e.&nbsp;<em>not</em> yet the user {@link #MSG_INTERACTION_STARTED
-	 * interaction}.
+	 * A message type representing a request from a client to start a user session,
+	 * i.e.&nbsp;<em>not</em> yet the user {@link #MSG_INTERACTION_STARTED
+	 * interaction}. Note that this is not the same as the actual server-client
+	 * session.
 	 */
 	public static final String MSG_START_SESSION = "MSG_START_SESSION";
 
