@@ -47,6 +47,12 @@ public final class ComponentMessageTypes {
 	public static final String MSG_DM = "MSG_DM";
 
 	/**
+	 * A message type representing that the session user interaction is now
+	 * available, i.e.&nbsp;it is now possible to initiate.
+	 */
+	public static final String MSG_INTERACTION_AVAILABLE = "MSG_INTERACTION_AVAILABLE";
+
+	/**
 	 * A message type representing the end of the session user interaction.
 	 */
 	public static final String MSG_INTERACTION_ENDED = "MSG_INTERACTION_ENDED";
@@ -71,7 +77,7 @@ public final class ComponentMessageTypes {
 	 * behavior</a>.
 	 */
 	public static final String MSG_NVB = "MSG_NVB";
-	
+
 	/**
 	 * A message type representing a request from the user to start the user
 	 * interaction.
