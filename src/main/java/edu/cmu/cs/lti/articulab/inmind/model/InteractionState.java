@@ -73,6 +73,27 @@ public final class InteractionState implements Serializable {
 		return true;
 	}
 
+	/**
+	 * @return the endTime
+	 */
+	public Long getEndTime() {
+		return endTime;
+	}
+
+	/**
+	 * @return the startTime
+	 */
+	public Long getStartTime() {
+		return startTime;
+	}
+
+	/**
+	 * @return the userModelUpdateTimes
+	 */
+	public List<Long> getUserModelUpdateTimes() {
+		return userModelUpdateTimes;
+	}
+
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -104,27 +125,6 @@ public final class InteractionState implements Serializable {
 		builder.append(userModelUpdateTimes);
 		builder.append("]");
 		return builder.toString();
-	}
-
-	/**
-	 * @return the endTime
-	 */
-	Long getEndTime() {
-		return endTime;
-	}
-
-	/**
-	 * @return the startTime
-	 */
-	Long getStartTime() {
-		return startTime;
-	}
-
-	/**
-	 * @return the userModelUpdateTimes
-	 */
-	List<Long> getUserModelUpdateTimes() {
-		return userModelUpdateTimes;
 	}
 
 }
