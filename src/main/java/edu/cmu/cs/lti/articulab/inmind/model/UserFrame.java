@@ -38,7 +38,7 @@ public class UserFrame {
     	if (!VALID_LIST_NAMES.contains(listName)) {
     		throw new IllegalArgumentException("Invalid list name: " + listName);
     	}
-        switch (listName.toLowerCase()) {
+        switch (listName) {
             case "genre":
                 return getGenres();
             case "director":           
