@@ -16,13 +16,18 @@
 package edu.cmu.cs.lti.articulab.inmind.model;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * User Frame
  * Created by yoichimatsuyama on 4/13/17.
  */
 public class UserFrame {
+	
+	private static final Set<String> VALID_LIST_NAMES = new HashSet<>(Arrays.asList("actor", "director", "genre", "movie"));
 
     private PreferenceList actors = new PreferenceList();
     private PreferenceList genres = new PreferenceList();
@@ -30,22 +35,20 @@ public class UserFrame {
     private PreferenceList movies = new PreferenceList();
 
     public PreferenceList getList(String listName) {
-        Utils.checkContents(listName.toLowerCase(), "genre", "director", "actor", "movie", "genres", "directors", "actors", "movies");
+    	if (!VALID_LIST_NAMES.contains(listName)) {
+    		throw new IllegalArgumentException("Invalid list name: " + listName);
+    	}
         switch (listName.toLowerCase()) {
             case "genre":
-            case "genres":
                 return getGenres();
-            case "director":
-            case "directors":
+            case "director":           
                 return getDirectors();
             case "actor":
-            case "actors":
                 return getActors();
             case "movie":
-            case "movies":
                 return getMovies();
             default:
-                throw new IllegalArgumentException("you're kidding me, searching for " + listName);
+                throw new IllegalArgumentException("Invalid list name: " + listName);
         }
     }
 
