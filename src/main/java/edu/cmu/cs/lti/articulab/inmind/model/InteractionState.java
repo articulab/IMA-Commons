@@ -19,7 +19,8 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * @author tshore
+ * @author <a href="mailto:tshore@cs.cmu.edu">Todd Shore</a>
+ * @since 2018-05-24
  *
  */
 public final class InteractionState implements Serializable {
