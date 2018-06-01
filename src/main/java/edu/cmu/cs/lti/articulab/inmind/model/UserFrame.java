@@ -27,6 +27,9 @@ import java.util.Set;
  */
 public class UserFrame {
 	
+	/**
+	 * TODO: Replace this with an enum for compile-time safety
+	 */
 	private static final Set<String> VALID_LIST_NAMES = new HashSet<>(Arrays.asList("actor", "director", "genre", "movie"));
 
     private PreferenceList actors = new PreferenceList();
