@@ -29,6 +29,8 @@ public class SROutput {
     double rapport;
     /** list of BehaviorNetwork states */
     List<String> states;
+    /** Entity info from NLU */
+    String entityType, entityID;
 
     public SROutput(DMOutput dmOutput) { 
         this.dmOutput = dmOutput;
@@ -55,6 +57,11 @@ public class SROutput {
     public void setStates(final List<String> states) {
         this.states = states;
     }
+
+    public String getEntityType() { return entityType; }
+    public void setEntityType(String entityType) { this.entityType = entityType; }
+    public String getEntityID() { return entityID; }
+    public void setEntityID(String entityID) { this.entityID = entityID; }
 
     public String toString(){
         return "Component: " + this.getClass().toString() + " System Action: " + dmOutput.action + " Strategy:" + strategy;
