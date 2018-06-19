@@ -19,10 +19,9 @@ package edu.cmu.cs.lti.articulab.inmind.model;
  * Created by yoichimatsuyama on 4/11/17.
  */
 public class DMOutput {
-    String action;
     protected Recommendation recommendation;
     UserFrame frame;
-    String utterance;
+    String action, utterance, posterURL;
 
     public String getAction() {
         return action;
@@ -62,6 +61,9 @@ public class DMOutput {
     public void setUtterance(String utterance) {
         this.utterance = utterance;
     }
+
+    public String getPosterURL() { return posterURL; }
+    public void setPosterURL(String posterURL) { this.posterURL = posterURL; }
 
     public String toString(){
         return "Component: " + this.getClass().toString() + " System Action: " + action;
