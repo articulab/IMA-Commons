@@ -16,31 +16,27 @@
 package edu.cmu.cs.lti.articulab.inmind.model;
 
 import java.util.List;
+import java.util.ArrayList;
+import edu.cmu.cs.lti.articulab.inmind.model.MovieObject;
 
 /**
- * Created by yoichimatsuyama on 4/16/17.
+ * Created by Vivian Tsai (vtsai4@gmail.com), August 2018.
  */
-public class Recommendation {
-    List<Rexplanation> rexplanations;
 
-    public List<Rexplanation> getRexplanations() {
-        return rexplanations;
+public class Recommendation{
+
+    List<MovieObject> movies;
+
+    /** Constructor. */
+    public Recommendation() {
+        movies = new ArrayList<MovieObject>();
     }
 
-    public void setRexplanations(List<Rexplanation> rexplanations) {
-        this.rexplanations = rexplanations;
+    public void add(MovieObject mo) {
+        movies.add(mo);
     }
 
     public String getTitle() {
-        assert rexplanations.size() > 0;
-        assert rexplanations.get(0).getRecommendation() != null;
-        return rexplanations.get(0).getRecommendation();
-    }
-
-    @Override
-    public String toString() {
-        return "Recommendation{" +
-                "rexplanations=" + rexplanations +
-                '}';
+        return movies.get(movies.size()-1).title;
     }
 }
