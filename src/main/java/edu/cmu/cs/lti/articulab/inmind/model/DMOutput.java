@@ -41,7 +41,7 @@ public class DMOutput {
      *  @return true if contains recommendation, else false
      */
     public boolean hasFullContent() {
-        return recommendation != null &&  recommendation.rexplanations != null;
+        return recommendation != null;
     }
     public boolean isRecommendation() {
         return action.equals("recommend");
