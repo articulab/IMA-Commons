@@ -36,6 +36,13 @@ public class Recommendation{
         movies.add(mo);
     }
 
+    /** Temporary: always returns first movie
+     * (as we only receive one movie per recommendation)
+     */
+    public MovieObject getMovie() {
+        return movies.get(0);
+    }
+
     public String getTitle() {
         return movies.get(movies.size()-1).title;
     }

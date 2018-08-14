@@ -15,13 +15,37 @@
  */
 package edu.cmu.cs.lti.articulab.inmind.model;
 
+import java.util.List;
+import java.lang.String;
+
 /**
  * Created by Vivian Tsai (vtsai4@gmail.com), August 2018.
  */
 
 public class MovieObject {
     String title;
+    List<Object> explanations;
+    String plot, runtime;
+    String [] genres, actors;
 
     public void setTitle(String title) { this.title = title; }
     public String getTitle() { return title; }
+    public void setExplanations(List<Object> explanations) { this.explanations = explanations; }
+    public List<Object> getExplanations() { return explanations; }
+    public void setPlot(String plot) { this.plot = plot; }
+    public String getPlot() { return plot; }
+    public void setGenres(String s) { this.genres = s.split(","); }
+    public String getGenres(int num) { return num == 1 ? genres[0] : choose(genres, num); }
+    public void setActors(String s) { this.actors = s.split(","); }
+    public String getActors(int num) { return num == 1 ? actors[0] : choose(actors, num); }
+    public void setRuntime(String runtime) { this.runtime = runtime; }
+    public String getRuntime() { return runtime; }
+
+    private String choose(String [] s, int num) {
+        String output = "";
+        for (int i = 0; i < num && i < s.length; i++) {
+            output += s[i] + ", ";
+        }
+        return output;
+    }
 }
