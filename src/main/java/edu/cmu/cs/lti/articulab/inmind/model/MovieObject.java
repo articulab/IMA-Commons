@@ -27,6 +27,7 @@ public class MovieObject {
     List<Object> explanations;
     String plot, runtime;
     String [] genres, actors;
+    String posterURL;
 
     public void setTitle(String title) { this.title = title; }
     public String getTitle() { return title; }
@@ -40,6 +41,8 @@ public class MovieObject {
     public String getActors(int num) { return num == 1 ? actors[0] : choose(actors, num); }
     public void setRuntime(String runtime) { this.runtime = runtime; }
     public String getRuntime() { return runtime; }
+    public void setPosterURL(String posterURL) { this.posterURL = posterURL; }
+    public String getPosterURL() { return posterURL; }
 
     private String choose(String [] s, int num) {
         String output = "";
